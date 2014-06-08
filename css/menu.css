@@ -1,0 +1,117 @@
+/* Horizontal Example CSS Menu */
+
+#sd_nav_hoz li a.arrow {background-image: url(images/arrow-right-horz-example.gif)}
+#sd_nav_hoz a img{	padding-right: 3px;}
+#sd_nav_hoz > li > a.arrow {background-image: url(images/arrow-down-horz-example.gif)}
+#sd_nav_hoz {width:100%}
+
+ul#sd_nav_hoz ,
+ul#sd_nav_hoz ul {
+ list-style-type: none;
+ margin: 0px;
+ list-style-image: none;
+ padding: 0px
+}
+#sd_nav_hoz li:hover > ul {display: block; /* show dropdown on hover */
+ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+ -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
+ }
+ul#sd_nav_hoz li {
+ position: relative;
+ list-style-type: none;
+ margin: 0px;
+ width: auto;
+ float: left;
+ list-style-image: none;
+ padding: 0px;
+ /* Making them to expand their height with a transition, for a slide effect */
+-webkit-transition: height .2s ease-in;
+-moz-transition: height .2s ease-in;
+-o-transition: height .2s ease-in;
+-ms-transition: height .2s ease-in;
+}
+
+ul#sd_nav_hoz li li {
+ width: auto;
+ float: none;
+
+}
+
+#sd_nav_hoz a {
+ display: block;
+ white-space: nowrap;
+ border-top: black 1px solid;
+ border-right: black 1px solid;
+ text-decoration: none;
+
+ text-shadow: 2px 1px 2px rgba(150, 150, 150, 0.73);
+ padding: 10px 25px 10px 25px ;border-width: 0 0 0 0px;border-style: none none none solid;color: #302313;font-size: 12px;
+ 
+}
+
+#sd_nav_hoz a:focus { outline-style: none; outline-color: invert; outline-width: medium}
+#sd_nav_hoz a.no-click {cursor: default}
+#sd_nav_hoz li a {margin: 0px;color:#fff}
+#sd_nav_hoz li li a {margin: 0px 0px -1px;color:#333}
+#sd_nav_hoz li li li a {margin: 0px 0px -1px;color:#333}
+#sd_nav_hoz > li > a.arrow {padding-right: 14px}
+#sd_nav_hoz ul.arrow-pad > li > a {padding-right: 11px}
+#sd_nav_hoz li a.arrow ,
+#sd_nav_hoz > li > a.arrow {
+ background-repeat: no-repeat;
+ background-position: right 50%
+}
+
+#sd_nav_hoz li:hover > a {background-color:#efefef;color: white;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset}
+
+#sd_nav_hoz li ul ,
+#sd_nav_hoz li:hover ul ul ,
+#sd_nav_hoz li:hover ul ul ul ,
+#sd_nav_hoz li:hover ul ul ul ul ,
+#sd_nav_hoz li:hover ul ul ul ul ul ,
+#sd_nav_hoz li:hover ul ul ul ul ul ul ,
+#sd_nav_hoz li:hover ul ul ul ul ul ul ul ,
+#sd_nav_hoz li:hover ul ul ul ul ul ul ul ul {
+ z-index: 999;
+ position: absolute;
+ display: none;
+ /* Making them to expand their height with a transition, for a slide effect */
+-webkit-transition: height .2s ease-in;
+-moz-transition: height .2s ease-in;
+-o-transition: height .2s ease-in;
+-ms-transition: height .2s ease-in;
+}
+
+#sd_nav_hoz li:hover ul {display: block}
+
+#sd_nav_hoz li li:hover ul ,
+#sd_nav_hoz li li li:hover ul ,
+#sd_nav_hoz li li li li:hover ul ,
+#sd_nav_hoz li li li li li:hover ul ,
+#sd_nav_hoz li li li li li li:hover ul ,
+#sd_nav_hoz li li li li li li li:hover ul {
+ display: block;
+ margin-left: 100%;
+ /* Making them to expand their height with a transition, for a slide effect */
+-webkit-transition: height .2s ease-in;
+-moz-transition: height .2s ease-in;
+-o-transition: height .2s ease-in;
+-ms-transition: height .2s ease-in;
+}
+
+#sd_nav_hoz li:hover ul {margin-left: 0px}
+#sd_nav_hoz ul >li>ul>li  a{background:#fff;color:#000}
+#sd_nav_hoz ul >li a{background:#fff;}
+
+#sd_nav_hoz ul ul {
+ top: 1px;
+ left: -1px;
+ 
+}
+
+#sd_nav_hoz li {}
+#sd_nav_hoz li:hover > a {background-color: #b6db49}
